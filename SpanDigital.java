@@ -53,9 +53,9 @@ public class SpanDigital {
         String awayTeam = team2Array[0];
         // int points = 0;
         int score1 = Integer.parseInt(team1Array[team1Array.length - 1]);
-        System.out.println(score1);
+        // System.out.println(score1);
         int score2 = Integer.parseInt(team2Array[team2Array.length - 1]);
-        System.out.println(score2);
+        // System.out.println(score2);
         if (score1 > score2) {
             if (hmap.containsKey(homeTeam)) {
                 hmap.put(homeTeam, hmap.get(homeTeam) + Rules.WIN.points);
@@ -137,6 +137,7 @@ public class SpanDigital {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("==OPEN expected_output.txt for Results==");
 
     }
 }
